@@ -27,6 +27,6 @@ we spent twenty years stepping over it.
 
 <p align="center">
   <a href="https://discord.gg/gqyV3nyjwE">
-    <img src="https://img.shields.io/badge/join%20threadlockers-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
+    <img src="https://img.shields.io/badge/join%20threadlocked-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
   </a>
 </p>
