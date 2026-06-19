@@ -12,26 +12,15 @@ we are interested in the tiny minority who can actually build things, break thin
 
 threadlockers has an unusually high concentration of cracked programmers, hackers, reverse engineers and general computer retards. the kind of people who treat firmware dumps, assembly listings and obscure protocol documentation as recreational reading.
 
-credentials mean nothing.
-
-job titles mean nothing.
-
-follower counts mean nothing.
-
-the work speaks for itself.
-
 entry is invite-only.
 
 if your first instinct is to ask for an invite, you probably aren't getting one.
-
 if you're genuinely cracked, we might accept an application.
 
 all members are part of the threadlocked webring:
-
 https://ring.seggs.lol
 
 the internet spent twenty years lowering the bar.
-
 we spent twenty years stepping over it.
 
 ---
