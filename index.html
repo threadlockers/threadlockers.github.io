@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>threadlocked</title>
+<meta name="description" content="invite-only. elitist by design." />
+<meta property="og:title" content="threadlocked" />
+<meta property="og:description" content="invite-only. elitist by design." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0b0d;
+    --ink:#c4c8ce;
+    --bright:#f1f3f6;
+    --dim:#5f656d;
+    --rule:#181b21;
+    --mono:"Geist Mono", ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  }
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--mono);
+    font-size:15px;
+    line-height:1.78;
+    font-feature-settings:"ss01" 1;
+    -webkit-font-smoothing:antialiased;
+    padding:0 26px;
+  }
+  ::selection{ background:var(--ink); color:var(--bg); }
+
+  .page{ width:min(56ch, 100%); margin:0 auto; padding:96px 0 80px; }
+
+  .brand{
+    color:var(--bright);
+    font-weight:600;
+    font-size:16px;
+    letter-spacing:.02em;
+    margin:0 0 56px;
+  }
+
+  p{ margin:0 0 1.7em; }
+  p.lead{ color:var(--bright); }
+  .dim{ color:var(--dim); }
+  .stack span{ display:block; }
+
+  a{ color:var(--ink); text-decoration:underline; text-decoration-color:var(--dim); text-underline-offset:3px; }
+  a:hover{ color:var(--bright); text-decoration-color:var(--bright); }
+  a:focus-visible{ outline:1px solid var(--bright); outline-offset:3px; }
+
+  .links{
+    margin-top:64px;
+    padding-top:22px;
+    border-top:1px solid var(--rule);
+    color:var(--dim);
+    display:flex;
+    gap:1.4em;
+  }
+
+  .label{
+    color:var(--dim);
+    font-size:11.5px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    margin:64px 0 14px;
+  }
+  .contact span{ display:block; }
+  .contact .name{ color:var(--ink); }
+
+  @media (max-width:560px){
+    body{ font-size:14px; padding:0 18px; }
+    .page{ padding:60px 0 56px; }
+    .brand{ margin-bottom:40px; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <p class="brand">threadlocked</p>
+
+  <p class="lead">invite-only. premium by nature, elitist by conviction.</p>
+
+  <p>every other community optimises for growth, which is a polite way of optimising for the average. the average bores us. we have no patience for leetcode, no respect for certificates, and nothing to say to anyone who enjoys the appearance of being technical. titles, degrees and follower counts are noise. we filter them out at the door.</p>
+
+  <p>what remains is a concentration of ability the rest of the field never gets to see: reverse engineers, ai researchers, hackers and cybersecurity researchers who treat the problems that stall entire teams as an evening's amusement. they operate several levels above the people you currently consider exceptional. when they look at a system, it opens. this is not a place you level up to. it is the ceiling everyone else is still climbing toward.</p>
+
+  <p class="stack">
+    <span>entry is invite-only.</span>
+    <span>if your first instinct is to ask, you have already failed it.</span>
+    <span class="dim">we occasionally permit the rare exception to apply. it is rarer than anyone believes.</span>
+  </p>
+
+  <p>most members belong to <a href="https://ring.seggs.lol">ring.seggs.lol</a>, the threadlocked webring.</p>
+
+  <p class="stack">
+    <span>the internet spent twenty years lowering the bar.</span>
+    <span>we spent twenty years stepping over it.</span>
+  </p>
+
+  <p class="label">contact</p>
+  <p class="contact stack">
+    <span class="name">nisarga adhikary &nbsp;<a href="https://github.com/ni5arga">github.com/ni5arga</a></span>
+    <span class="name">sagnik bhattacharjee &nbsp;<a href="https://github.com/datavorous">github.com/datavorous</a></span>
+  </p>
+
+  <div class="links">
+    <a href="https://ring.seggs.lol">ring.seggs.lol</a>
+    <a href="https://discord.gg/gqyV3nyjwE">discord</a>
+    <a href="https://github.com/threadlocked">github</a>
+  </div>
+
+</main>
+</body>
+</html>
