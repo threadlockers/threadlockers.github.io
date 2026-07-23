@@ -72,6 +72,28 @@
   .contact span{ display:block; }
   .contact .name{ color:var(--ink); }
 
+  figure.photo{
+    margin:64px 0 0;
+    padding:0;
+  }
+  figure.photo img{
+    display:block;
+    width:100%;
+    height:auto;
+    vertical-align:middle;
+  }
+  figure.photo figcaption{
+    margin-top:14px;
+    color:var(--dim);
+    font-size:12.5px;
+    line-height:1.65;
+  }
+  figure.photo figcaption .caption{
+    color:var(--ink);
+    display:block;
+    margin-bottom:.35em;
+  }
+
   @media (max-width:560px){
     body{ font-size:14px; padding:0 18px; }
     .page{ padding:60px 0 56px; }
@@ -102,6 +124,22 @@
     <span>the internet spent twenty years lowering the bar.</span>
     <span>we spent twenty years stepping over it.</span>
   </p>
+
+  <figure class="photo">
+    <a href="https://x.com/ajay__pawriya/status/2079966368854880404">
+      <img
+        src="assets/india-protests-ajay-pawriya.jpg"
+        alt="Protester at a recent India demonstration holding a handwritten sign"
+        width="1152"
+        height="2048"
+        loading="lazy"
+      />
+    </a>
+    <figcaption>
+      <span class="caption">from the recent india protests.</span>
+      photo by <a href="https://x.com/ajay__pawriya/status/2079966368854880404">ajay pawriya</a>
+    </figcaption>
+  </figure>
 
   <p class="label">contact</p>
   <p class="contact stack">
