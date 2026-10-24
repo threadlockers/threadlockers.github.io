@@ -39,3 +39,13 @@ https://www.anishfn.ink/writing/the-watermark-hiding-inside-claude-s-words
 https://www.nexxel.dev/blog/code-chunk
 
 https://de-engineer.github.io/SMT-Solvers/
+
+https://rohith.net/posts/hyperbola-quintessence-in-rust/
+
+https://www.axisspri.me/plasma/blog/jaam_solver_gauntlet_blog_draft_updated
+
+https://x.com/thatmagicalcat_/status/2050139356225253672
+
+https://news.ycombinator.com/item?id=44026799
+
+https://news.ycombinator.com/item?id=47014500
