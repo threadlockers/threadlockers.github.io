@@ -1,0 +1,77 @@
+name: Sync blogroll
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - blogroll/index.md
+      - blogroll/index.html
+  workflow_dispatch:
+    inputs:
+      source:
+        description: File to treat as the source of truth
+        type: choice
+        options: [md, html]
+        default: md
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: sync-blogroll
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Pick source of truth
+        id: source
+        env:
+          BEFORE: ${{ github.event.before }}
+          INPUT: ${{ inputs.source }}
+        run: |
+          if [ -n "$INPUT" ]; then
+            echo "from=$INPUT" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            BEFORE=HEAD~1
+          fi
+          changed=$(git diff --name-only "$BEFORE" HEAD -- blogroll/)
+          echo "$changed"
+          # Markdown wins when both files changed in the same push.
+          if echo "$changed" | grep -qx blogroll/index.md; then
+            echo "from=md" >> "$GITHUB_OUTPUT"
+          else
+            echo "from=html" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Sync
+        run: python3 scripts/sync_blogroll.py --from ${{ steps.source.outputs.from }}
+
+      - name: Commit and push
+        id: push
+        run: |
+          git add blogroll favicons
+          if git diff --cached --quiet; then
+            echo "Already in sync."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: sync blogroll from ${{ steps.source.outputs.from }}"
+          git push origin HEAD:main
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with GITHUB_TOKEN may not start a Pages build on their own.
+      - name: Request Pages build
+        if: steps.push.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"

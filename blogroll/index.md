@@ -49,3 +49,7 @@ https://x.com/thatmagicalcat_/status/2050139356225253672
 https://news.ycombinator.com/item?id=44026799
 
 https://news.ycombinator.com/item?id=47014500
+
+https://karansaini.com/mmi-android/
+
+https://karansaini.com/3d-secure-flawed-otp-handling/
