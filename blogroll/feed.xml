@@ -6,6 +6,11 @@
     <description>Things our community played with.</description>
     <atom:link href="https://threadlocked.xyz/blogroll/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Post training a model to explore Demoscenes</title>
+      <link>https://datavorous.com/writing/demoscener/</link>
+      <guid isPermaLink="true">https://datavorous.com/writing/demoscener/</guid>
+    </item>
+    <item>
       <title>Building a Black Hole Simulator</title>
       <link>https://zahintapadar.github.io/blog/building-a-black-hole-simulator/</link>
       <guid isPermaLink="true">https://zahintapadar.github.io/blog/building-a-black-hole-simulator/</guid>

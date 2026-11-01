@@ -59,3 +59,5 @@ https://karansaini.com/3d-secure-flawed-otp-handling/
 [Building a Chess Engine without Neural Networks](https://www.weptune.dev/maths/heavens-gate)
 
 [Building a Black Hole Simulator](https://zahintapadar.github.io/blog/building-a-black-hole-simulator/)
+
+[Post training a model to explore Demoscenes](https://datavorous.com/writing/demoscener/)
