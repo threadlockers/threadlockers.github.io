@@ -15,11 +15,13 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MD = ROOT / "blogroll" / "index.md"
 HTML = ROOT / "blogroll" / "index.html"
+FEED = ROOT / "blogroll" / "feed.xml"
 FAVICONS = ROOT / "favicons"
 
 UA = "Mozilla/5.0 (compatible; threadlocked-blogroll-sync)"
@@ -120,9 +122,35 @@ def html_to_md():
         MD.write_text(text)
 
 
+def write_feed():
+    """Publish blogroll links as an RSS feed, newest additions first."""
+    _, _, items = read_html()
+    ET.register_namespace("atom", "http://www.w3.org/2005/Atom")
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+    ET.SubElement(channel, "title").text = "Threadlocked Blogroll"
+    ET.SubElement(channel, "link").text = "https://threadlocked.xyz/blogroll/"
+    ET.SubElement(channel, "description").text = "Things our community played with."
+    ET.SubElement(channel, "{http://www.w3.org/2005/Atom}link", {
+        "href": "https://threadlocked.xyz/blogroll/feed.xml",
+        "rel": "self",
+        "type": "application/rss+xml",
+    })
+    for url, line in reversed(list(items.items())):
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = html.unescape(re.sub(r"<[^>]+>", "", line)).strip()
+        ET.SubElement(item, "link").text = url
+        ET.SubElement(item, "guid", isPermaLink="true").text = url
+    ET.indent(rss, space="  ")
+    feed = ET.tostring(rss, encoding="utf-8", xml_declaration=True).decode() + "\n"
+    if not FEED.exists() or feed != FEED.read_text():
+        FEED.write_text(feed)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--from", dest="source", choices=["md", "html"], required=True)
     args = parser.parse_args()
     md_to_html() if args.source == "md" else html_to_md()
+    write_feed()

@@ -53,3 +53,9 @@ https://news.ycombinator.com/item?id=47014500
 https://karansaini.com/mmi-android/
 
 https://karansaini.com/3d-secure-flawed-otp-handling/
+
+[Unsupervised discovery of Steering Vectors](https://www.lesswrong.com/posts/T64JQFZ5NwSzx4mJu/unsupervised-discovery-of-steering-vectors)
+
+[Building a Chess Engine without Neural Networks](https://www.weptune.dev/maths/heavens-gate)
+
+[Building a Black Hole Simulator](https://zahintapadar.github.io/blog/building-a-black-hole-simulator/)

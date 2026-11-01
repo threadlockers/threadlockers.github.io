@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Threadlocked Blogroll</title>
+    <link>https://threadlocked.xyz/blogroll/</link>
+    <description>Things our community played with.</description>
+    <atom:link href="https://threadlocked.xyz/blogroll/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Black Hole Simulator</title>
+      <link>https://zahintapadar.github.io/blog/building-a-black-hole-simulator/</link>
+      <guid isPermaLink="true">https://zahintapadar.github.io/blog/building-a-black-hole-simulator/</guid>
+    </item>
+    <item>
+      <title>Building a Chess Engine without Neural Networks</title>
+      <link>https://www.weptune.dev/maths/heavens-gate</link>
+      <guid isPermaLink="true">https://www.weptune.dev/maths/heavens-gate</guid>
+    </item>
+    <item>
+      <title>Unsupervised discovery of Steering Vectors</title>
+      <link>https://www.lesswrong.com/posts/T64JQFZ5NwSzx4mJu/unsupervised-discovery-of-steering-vectors</link>
+      <guid isPermaLink="true">https://www.lesswrong.com/posts/T64JQFZ5NwSzx4mJu/unsupervised-discovery-of-steering-vectors</guid>
+    </item>
+    <item>
+      <title>Attacking a weak 3D Secure implementation</title>
+      <link>https://karansaini.com/3d-secure-flawed-otp-handling/</link>
+      <guid isPermaLink="true">https://karansaini.com/3d-secure-flawed-otp-handling/</guid>
+    </item>
+    <item>
+      <title>1-click MMI execution in Android</title>
+      <link>https://karansaini.com/mmi-android/</link>
+      <guid isPermaLink="true">https://karansaini.com/mmi-android/</guid>
+    </item>
+    <item>
+      <title>A ~1200 Elo chess engine that fits within 2KB</title>
+      <link>https://news.ycombinator.com/item?id=47014500</link>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=47014500</guid>
+    </item>
+    <item>
+      <title>Goboscript is a programming language that compiles to Scratch</title>
+      <link>https://news.ycombinator.com/item?id=44026799</link>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=44026799</guid>
+    </item>
+    <item>
+      <title>Playing Doom on an OS I wrote in Rust over 2 months</title>
+      <link>https://x.com/thatmagicalcat_/status/2050139356225253672</link>
+      <guid isPermaLink="true">https://x.com/thatmagicalcat_/status/2050139356225253672</guid>
+    </item>
+    <item>
+      <title>The Story of How I bungled through a Demo and Ricocheted Between Debugging EM Solvers(and found a few bugs too!)</title>
+      <link>https://www.axisspri.me/plasma/blog/jaam_solver_gauntlet_blog_draft_updated</link>
+      <guid isPermaLink="true">https://www.axisspri.me/plasma/blog/jaam_solver_gauntlet_blog_draft_updated</guid>
+    </item>
+    <item>
+      <title>Hyperbola Quintessence in Rust</title>
+      <link>https://rohith.net/posts/hyperbola-quintessence-in-rust/</link>
+      <guid isPermaLink="true">https://rohith.net/posts/hyperbola-quintessence-in-rust/</guid>
+    </item>
+    <item>
+      <title>Understanding SMT solvers: An Introduction to Z3</title>
+      <link>https://de-engineer.github.io/SMT-Solvers/</link>
+      <guid isPermaLink="true">https://de-engineer.github.io/SMT-Solvers/</guid>
+    </item>
+    <item>
+      <title>Building code-chunk: AST Aware Code Chunking</title>
+      <link>https://www.nexxel.dev/blog/code-chunk</link>
+      <guid isPermaLink="true">https://www.nexxel.dev/blog/code-chunk</guid>
+    </item>
+    <item>
+      <title>The Watermark Hiding Inside Claude’s Words</title>
+      <link>https://www.anishfn.ink/writing/the-watermark-hiding-inside-claude-s-words</link>
+      <guid isPermaLink="true">https://www.anishfn.ink/writing/the-watermark-hiding-inside-claude-s-words</guid>
+    </item>
+    <item>
+      <title>Shapeshifting UI Built on Top of Jev</title>
+      <link>https://www.anishfn.ink/writing/shapeshift</link>
+      <guid isPermaLink="true">https://www.anishfn.ink/writing/shapeshift</guid>
+    </item>
+    <item>
+      <title>tuples considered harmful</title>
+      <link>https://codeberg.org/aspizu/aspizu.github.io/src/branch/main/tuples-considered-harmful.txt</link>
+      <guid isPermaLink="true">https://codeberg.org/aspizu/aspizu.github.io/src/branch/main/tuples-considered-harmful.txt</guid>
+    </item>
+    <item>
+      <title>How I pretrained a 1B Kimi K3 model on an H100 for three weeks</title>
+      <link>https://arneshbanerjee.dev/blog/kimi-k3-for-all.html</link>
+      <guid isPermaLink="true">https://arneshbanerjee.dev/blog/kimi-k3-for-all.html</guid>
+    </item>
+    <item>
+      <title>Getting the Penguin on a Clover Field</title>
+      <link>https://www.axisspri.me/plasma/blog/my-journey-with-the-dell-venue-7-native-linux</link>
+      <guid isPermaLink="true">https://www.axisspri.me/plasma/blog/my-journey-with-the-dell-venue-7-native-linux</guid>
+    </item>
+    <item>
+      <title>RISC-V H-Extension: The Only Hypervisor Spec You Can Read at Lunch</title>
+      <link>https://mooofin.github.io/portfolio/blog/risc-v-hypervisor.html</link>
+      <guid isPermaLink="true">https://mooofin.github.io/portfolio/blog/risc-v-hypervisor.html</guid>
+    </item>
+    <item>
+      <title>Breeding Better Binaries: Shackleton and the Case for Evolutionary Optimizations in LLVM</title>
+      <link>https://mooofin.github.io/portfolio/blog/shackleton-llvm-gp.html</link>
+      <guid isPermaLink="true">https://mooofin.github.io/portfolio/blog/shackleton-llvm-gp.html</guid>
+    </item>
+    <item>
+      <title>Reverse Engineering Jane Street’s ASIC</title>
+      <link>https://shoobham84.github.io/REJS/</link>
+      <guid isPermaLink="true">https://shoobham84.github.io/REJS/</guid>
+    </item>
+    <item>
+      <title>Fun driven development</title>
+      <link>https://namishh.com/blog/talks/development/</link>
+      <guid isPermaLink="true">https://namishh.com/blog/talks/development/</guid>
+    </item>
+    <item>
+      <title>Generating Planets</title>
+      <link>https://namishh.com/blog/devlogs/planet/</link>
+      <guid isPermaLink="true">https://namishh.com/blog/devlogs/planet/</guid>
+    </item>
+    <item>
+      <title>Reverse engineering a commercial spatial audio effect</title>
+      <link>https://epestr.com/blog/reverse-engineering-a-commercial-spatial-audio-effect/</link>
+      <guid isPermaLink="true">https://epestr.com/blog/reverse-engineering-a-commercial-spatial-audio-effect/</guid>
+    </item>
+    <item>
+      <title>Writing a ray tracer in Brainfuck</title>
+      <link>https://epestr.com/blog/writing-a-ray-tracer-in-brainfuck/</link>
+      <guid isPermaLink="true">https://epestr.com/blog/writing-a-ray-tracer-in-brainfuck/</guid>
+    </item>
+    <item>
+      <title>Creating an OS on my own because I was bored</title>
+      <link>https://nolawz.xyz/blog/osdev/</link>
+      <guid isPermaLink="true">https://nolawz.xyz/blog/osdev/</guid>
+    </item>
+    <item>
+      <title>How I Hacked a Multi-Billion-Dollar Company</title>
+      <link>https://blogs.pwnedby.me/blog/hacking-a-multi-billion-dollars-company/</link>
+      <guid isPermaLink="true">https://blogs.pwnedby.me/blog/hacking-a-multi-billion-dollars-company/</guid>
+    </item>
+    <item>
+      <title>Wrestling with Netlink: Adding Conntrack Support to Podman as an LFX Mentee</title>
+      <link>https://blog.podman.io/2025/12/wrestling-with-netlink-adding-conntrack-support-to-podman-as-an-lfx-mentee/</link>
+      <guid isPermaLink="true">https://blog.podman.io/2025/12/wrestling-with-netlink-adding-conntrack-support-to-podman-as-an-lfx-mentee/</guid>
+    </item>
+    <item>
+      <title>A Lot Can Happen Over Coffee: Hacking Café Coffee Day</title>
+      <link>https://ni5arga.com/blog/posts/hacking-ccd/</link>
+      <guid isPermaLink="true">https://ni5arga.com/blog/posts/hacking-ccd/</guid>
+    </item>
+    <item>
+      <title>Exposing Critical Vulnerabilities in CBSE’s On-Screen Marking Portal: From Authentication Bypass to Full Account Takeover</title>
+      <link>https://ni5arga.com/blog/posts/hacking-cbse/</link>
+      <guid isPermaLink="true">https://ni5arga.com/blog/posts/hacking-cbse/</guid>
+    </item>
+    <item>
+      <title>So what remains unvibecodable now?</title>
+      <link>https://datavorous.github.io/blog/unvibecodable.html</link>
+      <guid isPermaLink="true">https://datavorous.github.io/blog/unvibecodable.html</guid>
+    </item>
+    <item>
+      <title>Reverse engineering the Qualcomm NPU compiler</title>
+      <link>https://datavorous.github.io/writing/qairt/index.html</link>
+      <guid isPermaLink="true">https://datavorous.github.io/writing/qairt/index.html</guid>
+    </item>
+  </channel>
+</rss>

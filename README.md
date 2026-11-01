@@ -10,3 +10,4 @@
 - Mark featured links with `data-featured` on the `<li>` in `index.html`.
 
 Run it locally with `python3 scripts/sync_blogroll.py --from md` (or `--from html`).
+The script also updates `blogroll/feed.xml`, an RSS feed of the blogroll links.
