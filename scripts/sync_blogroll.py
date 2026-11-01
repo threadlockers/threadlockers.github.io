@@ -5,8 +5,9 @@
                fetched title and favicon, removed URLs are dropped.
   --from html  index.html is the source: index.md is rewritten from it.
 
-A line in index.md may be a bare URL or [Custom title](URL). Featured status
-and edited titles live only in the HTML and are kept across syncs.
+A line in index.md may be a bare URL or [Custom title](URL). Custom titles in
+Markdown update the HTML; bare URLs keep existing HTML titles. Featured status
+lives only in the HTML and is kept across syncs.
 """
 import argparse
 import html
@@ -27,6 +28,7 @@ FAVICONS = ROOT / "favicons"
 UA = "Mozilla/5.0 (compatible; threadlocked-blogroll-sync)"
 LIST_RE = re.compile(r'(<ul id="blogroll">\n)(.*?)(\n    </ul>)', re.S)
 ITEM_RE = re.compile(r'^\s*<li[^>]*><a href="([^"]+)">.*</li>\s*$')
+ITEM_TITLE_RE = re.compile(r'^(.*<a href="[^"]+">(?:<img[^>]*>)?)(.*?)(</a></li>\s*)$')
 MD_LINK_RE = re.compile(r"^\[(.+)\]\((\S+)\)$")
 ICON = ('<img class="link-icon" src="../favicons/{}" width="16" height="16" '
         'alt="" aria-hidden="true" loading="lazy" decoding="async">')
@@ -101,6 +103,13 @@ def new_item(url, title):
             f"{html.escape(title, quote=False)}</a></li>")
 
 
+def update_title(line, title):
+    match = ITEM_TITLE_RE.match(line)
+    if not match:
+        sys.exit(f"{HTML}: could not update title in blogroll item:\n{line}")
+    return match.group(1) + html.escape(title, quote=False) + match.group(3)
+
+
 def md_to_html():
     page, match, items = read_html()
     entries = read_md()
@@ -108,7 +117,9 @@ def md_to_html():
     for url in items:
         if url not in wanted:
             print(f"removing: {url}")
-    lines = [items.get(url) or new_item(url, title) for url, title in entries]
+    lines = [update_title(items[url], title) if url in items and title else
+             items[url] if url in items else new_item(url, title)
+             for url, title in entries]
     body = "\n".join(lines)
     if body != match.group(2):
         HTML.write_text(page[:match.start(2)] + body + page[match.end(2):])

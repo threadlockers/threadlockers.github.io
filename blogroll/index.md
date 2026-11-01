@@ -60,7 +60,7 @@ https://karansaini.com/3d-secure-flawed-otp-handling/
 
 [Building a Black Hole Simulator](https://zahintapadar.github.io/blog/building-a-black-hole-simulator/)
 
-[Post training a model to explore Demoscenes](https://datavorous.com/writing/demoscener/)
+[Post training a model to explore Demoscene](https://datavorous.com/writing/demoscener/)
 
 [A Primer on Lambda Calculus](https://mukesh.0xc84.fyi/blog/lambda-calculus.html)
 

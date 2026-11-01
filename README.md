@@ -5,7 +5,7 @@
 
 - Add or remove a URL in `index.md` (one per line, optionally
   `[Custom title](URL)`): the action fetches the title and favicon,
-  updates `index.html`, and pushes.
+  updates `index.html`, and pushes. Custom titles also update existing entries.
 - Edit only `index.html`: the action rewrites `index.md` to match.
 - Mark featured links with `data-featured` on the `<li>` in `index.html`.
 
