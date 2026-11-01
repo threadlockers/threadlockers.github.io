@@ -61,3 +61,9 @@ https://karansaini.com/3d-secure-flawed-otp-handling/
 [Building a Black Hole Simulator](https://zahintapadar.github.io/blog/building-a-black-hole-simulator/)
 
 [Post training a model to explore Demoscenes](https://datavorous.com/writing/demoscener/)
+
+[A Primer on Lambda Calculus](https://mukesh.0xc84.fyi/blog/lambda-calculus.html)
+
+[On handling 1.2M requests on a short notice](https://ahhyoushh.github.io/betjee/)
+
+[Inside Beam: Reading a 501B MoE one expert at a time](https://rycerz.es/blog/inside-beam)

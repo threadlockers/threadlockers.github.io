@@ -6,6 +6,21 @@
     <description>Things our community played with.</description>
     <atom:link href="https://threadlocked.xyz/blogroll/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Inside Beam: Reading a 501B MoE one expert at a time</title>
+      <link>https://rycerz.es/blog/inside-beam</link>
+      <guid isPermaLink="true">https://rycerz.es/blog/inside-beam</guid>
+    </item>
+    <item>
+      <title>On handling 1.2M requests on a short notice</title>
+      <link>https://ahhyoushh.github.io/betjee/</link>
+      <guid isPermaLink="true">https://ahhyoushh.github.io/betjee/</guid>
+    </item>
+    <item>
+      <title>A Primer on Lambda Calculus</title>
+      <link>https://mukesh.0xc84.fyi/blog/lambda-calculus.html</link>
+      <guid isPermaLink="true">https://mukesh.0xc84.fyi/blog/lambda-calculus.html</guid>
+    </item>
+    <item>
       <title>Post training a model to explore Demoscenes</title>
       <link>https://datavorous.com/writing/demoscener/</link>
       <guid isPermaLink="true">https://datavorous.com/writing/demoscener/</guid>
